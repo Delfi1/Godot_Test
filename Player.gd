@@ -16,13 +16,9 @@ func _physics_process(delta):
 		velocity.x = speed;
 	else:
 		velocity.x = 0;
-	if is_on_floor():
-		jump = false;
 	
 	if velocity:
 		velocity.y += gravity * delta; 
 		move_and_slide(velocity, Vector2.UP);
 	if Input.is_action_just_pressed("ui_up") and is_on_floor():
 		velocity.y = -jumpForce;
-		jump = true;
-		print(jump);
