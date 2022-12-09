@@ -34,4 +34,4 @@ rect_scale = Vector2( 0.75, 0.75 )
 size_flags_horizontal = 7
 size_flags_vertical = 5
 custom_fonts/font = SubResource( 3 )
-text = "alpha 0.0.2"
+text = "alpha 0.0.3"
